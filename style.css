@@ -1,0 +1,311 @@
+/* ============================= */
+/* 1️⃣ Reset + Smooth Scroll      */
+/* ============================= */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* ============================= */
+/* 2️⃣ Body / Font / Colors       */
+/* ============================= */
+body {
+    font-family: 'Cairo', sans-serif; /* أو أي فونت تحبيه */
+    line-height: 1.6;
+    color: #333; /* لون افتراضي للنص */
+    background-color: #fff; /* خلفية عامة */
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500; /* بدل 400 يبقى أكثر سمك */
+  color: #212529;
+}
+
+
+/* ============================= */
+/* 3️⃣ Headings (H1-H6)           */
+/* ============================= */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* ============================= */
+/* 4️⃣ Links and Buttons          */
+/* ============================= */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #007bff; /* لون افتراضي للهوفر */
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* ============================= */
+/* 5️⃣ Images                     */
+/* ============================= */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ============================= */
+/* 6️⃣ Utility Classes            */
+/* ============================= */
+.text-center { text-align: center; }
+.mt-1 { margin-top: 10px; }
+.mb-1 { margin-bottom: 10px; }
+.mt-2 { margin-top: 20px; }
+.mb-2 { margin-bottom: 20px; }
+.p-1 { padding: 10px; }
+.p-2 { padding: 20px; }
+.w-100 { width: 100%; }
+.rounded { border-radius: 8px; }
+.shadow { box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+
+/* ============================= */
+/* 7️⃣ Forms / Inputs              */
+/* ============================= */
+input, textarea, select {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0,123,255,0.3);
+}
+
+/* ============================= */
+/* 8️⃣ Sections / Containers       */
+/* ============================= */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+/* ============================= */
+/* 9️⃣ Footer                     */
+/* ============================= */
+footer {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background-color: #333;
+    padding: 15px 0;
+}
+
+/* ============================= */
+/* 10️⃣ Headings & Paragraphs       */
+/* ============================= */
+p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Media Queries */
+
+
+/* موبايل */
+@media (max-width: 576px) {
+    h1 { font-size: 24px; }
+    h2 { font-size: 22px; }
+    h5 { font-size: 15px; }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+}
+
+/* تابلت */
+@media (max-width: 768px) {
+    h1 { font-size: 28px; }
+    h2 { font-size: 24px; }
+}
+
+/* شاشات كبيرة */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+
+/* --------------------------------------------------------------------------------- */
+
+
+.card {
+    transition: transform 0.4s ease, 
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px); /* يرفع الكارد شوية */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2); /* ظل أعمق */
+}
+
+
+
+.letters{
+    max-width: 700px;       /* عرض مناسب للقراءة */
+    margin: 20px auto;      /* توسيط داخل الصفحة */
+    padding: 20px;
+    background-color: #fff; /* خلفية هادئة */
+    border-radius: 10px;    /* حواف دائرية ناعمة */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* ظل خفيف */
+    font-family: 'Cairo', sans-serif; /* خط عربي واضح */
+    line-height: 1.8;       /* مسافة بين السطور للراحة */
+    color: #333;
+    transition: transform 0.3s ease; /* تحريك عند hover */
+}
+
+.letters:hover {
+    transform: translateY(-5px); /* رفع بسيط عند تمرير الماوس */
+}
+
+
+
+#skills {
+  background-color: #f0f8ff;
+}
+
+.skill-card {
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+
+
+
+
+
+
+.card-title i {
+    color: #ff9909; /* اللون الجديد، ممكن أي كود HEX */
+    margin-right: 8px;
+}
+
+
+.my-navbar {
+    background-color: #0a8b9a; /* أي لون تختاريه */
+}
+
+.my-navbar .nav-link {
+    color: #fff; /* لون النصوص */
+}
+
+.my-navbar .nav-link:hover {
+    color: #ffd6e8; /* لون عند التحويم */
+}
+
+
+
+
+.project-card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.project-overlay h5, .project-overlay p {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.gradient-text {
+  font-weight: 700;
+  font-size: 2.5rem;
+  background: linear-gradient(270deg, #007bff, #ff6f61, #ffc107, #007bff);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+<!-- Dark Mode Styles -->
+<style>
+body.dark-mode .skill-card {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+}
+body.dark-mode .progress-bar {
+  color: #f1f1f1;
+}
+</style>
+
+
+.dark-mode-input, #contact button {
+  transition: all 0.3s ease;
+}
