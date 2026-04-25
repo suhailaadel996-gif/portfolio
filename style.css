@@ -68,6 +68,15 @@ img {
   display: block;
 }
 
+.profile-img {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* لو عايزة شكل دائري */
+  display: block;
+  margin: auto;
+}
+
 /* ============================= */
 /* 6️⃣ Utility Classes            */
 /* ============================= */
